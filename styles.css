@@ -27,19 +27,41 @@ body{
     grid-area: headB;
 }
 #layout2{
-    display: inline-grid;
+    background-color: rgb(197, 192, 192);
+    display: grid;
     grid-template-columns: repeat(2,auto);
     grid-template-rows: repeat(2,auto);
     grid-area: layout2;
 }
 #layout3{
     display: grid;
+    background-color: rgb(197, 192, 192);
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-area: layout3;
 }
 
+#layout4{
+    display: grid;
+    background-color: rgb(197, 192, 192);
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(3,auto);
+}
+
+#layout5{
+    display: grid;
+    background-color: rgb(197, 192, 192);
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(4,auto);
+}
+
 .gridUnit{
     background-color: white;
     border: solid black 3px;
+}
+
+.gridHeader{
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 10px;
 }
