@@ -1,28 +1,42 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .layout{
     resize: both;
     overflow: auto;
-    display: inline-grid;
-    grid-template: 300px 300px 300px 300px/ 550px 550px 550px 550px;
+    display: grid;
+    grid-template: 300px 300px 300px 300px/ 250px 550px 550px 350px;
     grid-template-areas: 
     "sideB headB headB headB"
-    "sideB layout2 layout2 layout2"
-    "sideB layout2 layout2 layout2"
-    "sideB layout2 layout2 layout2";
+    "sideB layout2 layout2 layout3"
+    "sideB layout2 layout2 layout3"
+    "sideB layout2 layout2 layout3";
 }
 
 #sideB{
     background-color: rgb(153, 4, 153);
     grid-area: sideB;
+    color:aliceblue;
+    font-size: 20px;
 }
 #headB{
     background-color: rgb(250, 0, 0);
     grid-area: headB;
 }
 #layout2{
-    display: grid;
-    grid-template-columns: (2,1fr);
-    grid-template-rows: (3,1fr);
+    display: inline-grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
     grid-area: layout2;
+}
+#layout3{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-area: layout3;
 }
 
 .gridUnit{
