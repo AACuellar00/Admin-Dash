@@ -1,0 +1,31 @@
+.layout{
+    resize: both;
+    overflow: auto;
+    display: inline-grid;
+    grid-template: 300px 300px 300px 300px/ 550px 550px 550px 550px;
+    grid-template-areas: 
+    "sideB headB headB headB"
+    "sideB layout2 layout2 layout2"
+    "sideB layout2 layout2 layout2"
+    "sideB layout2 layout2 layout2";
+}
+
+#sideB{
+    background-color: rgb(153, 4, 153);
+    grid-area: sideB;
+}
+#headB{
+    background-color: rgb(250, 0, 0);
+    grid-area: headB;
+}
+#layout2{
+    display: grid;
+    grid-template-columns: (2,1fr);
+    grid-template-rows: (3,1fr);
+    grid-area: layout2;
+}
+
+.gridUnit{
+    background-color: white;
+    border: solid black 3px;
+}
